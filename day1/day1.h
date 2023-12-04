@@ -1,6 +1,8 @@
 #ifndef DAY1_H
 #define DAY1_H
 
-int Day1Solve();
+#include <string>
+
+int solve(std::string input);
 
 #endif
