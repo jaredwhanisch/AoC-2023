@@ -3,6 +3,7 @@
 
 #include <string>
 
-int solve(std::string input);
+int solvePart1(std::string input);
+int solvePart2(std::string input);
 
 #endif
