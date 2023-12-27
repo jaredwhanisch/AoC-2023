@@ -10,6 +10,21 @@ CXXFLAGS = \
 -Wextra \
 -Werror
 
+USER_INCLUDES = \
+-Iday1 \
+-Iday2
+
+USER_OBJS = \
+day1.o \
+day2.o
+
+
+main: test
+
+test: gtest-all.o gtest_main.o $(USER_OBJS)
+	$(CXX) $(CXXFLAGS) $(GTEST_INCLUDES) $(GTEST_OBJS) $(USER_INCLUDES) $(USER_OBJS) test/test.cpp -o $@.o
+	./$@.o
+
 #########################################
 # GTEST
 #########################################
@@ -34,12 +49,19 @@ gtest_main.o: dependencies/googletest-1.14.0/googletest/src/gtest_main.cc
 # Day 1
 #########################################
 
-test_day1: gtest-all.o gtest_main.o day1.o
-	$(CXX) $(CXXFLAGS) $(GTEST_INCLUDES) $(GTEST_OBJS) -Iday1 day1.o day1/day1_test.cpp -o $@.o
-	./$@.o
-
 day1.o: day1/day1.cpp
 	$(CXX) $(CXXFLAGS) -c day1/day1.cpp
+
+#########################################
+# Day 2
+#########################################
+
+day2.o: day2/day2.cpp
+	$(CXX) $(CXXFLAGS) -c day2/day2.cpp
+
+#########################################
+# clean
+#########################################
 
 clean:
 	rm -r *.o

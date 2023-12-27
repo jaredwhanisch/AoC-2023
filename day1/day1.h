@@ -3,7 +3,7 @@
 
 #include <string>
 
-int solvePart1(std::string input);
-int solvePart2(std::string input);
+int Day1_SolvePart1(std::string input);
+int Day1_SolvePart2(std::string input);
 
 #endif
