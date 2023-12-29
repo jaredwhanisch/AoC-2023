@@ -2,7 +2,7 @@
 
 #include <fstream>
 #include <iostream>
-#include <map>
+#include <unordered_map>
 
 // helper for all the splitting of strings
 std::vector<std::string> split(std::string s, std::string delimiter) {
