@@ -6,6 +6,7 @@
 #include <filesystem>
 #include <unordered_map>
 #include <tuple>
+#include <vector>
 
 int Day1_SolvePart1(std::string input) {
     std::ifstream file(input);
