@@ -4,6 +4,7 @@
 
 #include <string>
 
+
 const std::string PARENT = "/Users/jaredhanisch/repos/AoC-2023/test/test-inputs/";
 
 const std::string DAY_1_SAMPLE_INPUT_PART_1 = PARENT + "day1/sample_input_part_1.txt";
@@ -25,5 +26,11 @@ const std::string DAY_2_SAMPLE_INPUT_PART_2 = PARENT + "day2/sample_input_part_2
 const std::string DAY_2_MY_INPUT = PARENT + "day2/my_input.txt";
 
 TEST(AoC_2023, day2_part1_test) {
-    EXPECT_EQ(Day2_SolvePart1(DAY_2_SAMPLE_INPUT_PART_2), 0);
+    EXPECT_EQ(Day2_SolvePart1(DAY_2_SAMPLE_INPUT_PART_1), 8);
+    EXPECT_EQ(Day2_SolvePart1(DAY_2_MY_INPUT), 2101);
+}
+
+TEST(AoC_2023, day2_part2_test) {
+    EXPECT_EQ(Day2_SolvePart2(DAY_2_SAMPLE_INPUT_PART_1), 2286);
+    EXPECT_EQ(Day2_SolvePart2(DAY_2_MY_INPUT), 58269);
 }
