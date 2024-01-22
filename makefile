@@ -12,11 +12,13 @@ CXXFLAGS = \
 
 USER_INCLUDES = \
 -Iday1 \
--Iday2
+-Iday2 \
+-Iday3
 
 USER_OBJS = \
 day1.o \
-day2.o
+day2.o \
+day3.o
 
 
 main: test
@@ -58,6 +60,13 @@ day1.o: day1/day1.cpp
 
 day2.o: day2/day2.cpp
 	$(CXX) $(CXXFLAGS) -c day2/day2.cpp
+
+#########################################
+# Day 3
+#########################################
+
+day3.o: day3/day3.cpp
+	$(CXX) $(CXXFLAGS) -c day3/day3.cpp
 
 #########################################
 # clean

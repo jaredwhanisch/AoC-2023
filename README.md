@@ -56,3 +56,5 @@ Holy Splitting! Times like this is when I wish I was just using Python. A `std::
 Due to the multiple different delimiters within the Game Records, I found it necessary to write my own split helper function with the help of a [Stack Overflow article](https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c). This really made the implementation a lot easier to write, other than having so many different vectors to keep track of.
 
 Overall I felt this was a pretty straight forward problem. In this problem I tried to make use of [range based for loops](https://en.cppreference.com/w/cpp/language/range-for) as they make the implementation quite a bit more readable. I think I am going to try to use these as the default going forward on future days problems.
+
+## [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3)
