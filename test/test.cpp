@@ -34,10 +34,15 @@ TEST(AoC_2023, day2_part2_test) {
     EXPECT_EQ(Day2_SolvePart2(DAY_2_MY_INPUT), 58269);
 }
 
-const std::string DAY_3_SAMPLE_INPUT = PARENT + "day3/sample_input.txt";
+const std::string DAY_3_SAMPLE_INPUT = PARENT + "day3/sample-input.txt";
 const std::string DAY_3_MY_INPUT = PARENT + "day3/my_input.txt";
 
 TEST(AoC_2023, day3_part1_test) {
-    EXPECT_EQ(Day3_SolvePart2(DAY_3_SAMPLE_INPUT), 4361);
-    EXPECT_EQ(Day3_SolvePart2(DAY_3_MY_INPUT), 0);
+    EXPECT_EQ(Day3_SolvePart1(DAY_3_SAMPLE_INPUT), 4361);
+    EXPECT_EQ(Day3_SolvePart1(DAY_3_MY_INPUT), 527369);
+}
+
+TEST(AoC_2023, day3_part2_test) {
+    EXPECT_EQ(Day3_SolvePart2(DAY_3_SAMPLE_INPUT), 467835);
+    // EXPECT_EQ(Day3_SolvePart2(DAY_3_MY_INPUT), 0);
 }
