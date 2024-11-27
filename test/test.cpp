@@ -44,5 +44,5 @@ TEST(AoC_2023, day3_part1_test) {
 
 TEST(AoC_2023, day3_part2_test) {
     EXPECT_EQ(Day3_SolvePart2(DAY_3_SAMPLE_INPUT), 467835);
-    // EXPECT_EQ(Day3_SolvePart2(DAY_3_MY_INPUT), 0);
+    EXPECT_EQ(Day3_SolvePart2(DAY_3_MY_INPUT), 73074886);
 }

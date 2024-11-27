@@ -6,8 +6,11 @@
 #include <utility>
 
 bool hasAdjacentSymbols_Part1(std::vector<std::pair<size_t, size_t>> coords, 
-                              std::vector<std::vector<char>> array2D);
+                              std::vector<std::vector<char>> schematic);
 int Day3_SolvePart1(std::string input);
+
+std::string coordOfAdjStar(std::vector<std::pair<size_t, size_t>> coords, 
+                           std::vector<std::vector<char>> schematic);
 int Day3_SolvePart2(std::string input);
 
 #endif
